@@ -5,21 +5,21 @@
 class Debtdrone < Formula
   desc "Technical debt analysis tool for modern codebases."
   homepage "https://github.com/endrilickollari/debtdrone"
-  version "1.0.0"
+  version "2.0.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/endrilickollari/debtdrone-cli/releases/download/v1.0.0/debtdrone_Darwin_x86_64.tar.gz"
-      sha256 "49ab212426926b29085e70c39ff4af97c7cfa5439e9748f4248522de6e7cebc0"
+      url "https://github.com/endrilickollari/debtdrone-cli/releases/download/v2.0.0/debtdrone_darwin_amd64.tar.gz"
+      sha256 "89bbeff135ef71afbeae338311de5c568f30f8beb48e96b1621cf7585c1b1ecb"
 
       def install
         bin.install "debtdrone"
       end
     end
     on_arm do
-      url "https://github.com/endrilickollari/debtdrone-cli/releases/download/v1.0.0/debtdrone_Darwin_arm64.tar.gz"
-      sha256 "e0ca8cefbb59b5de7f3013b6f2ff11df2b746b9ba3870e111739c9d33b6b3375"
+      url "https://github.com/endrilickollari/debtdrone-cli/releases/download/v2.0.0/debtdrone_darwin_arm64.tar.gz"
+      sha256 "4b5f32e1d468615cd230c29273cda1848fe83817c268d3a151aed4855f2f43c2"
 
       def install
         bin.install "debtdrone"
@@ -30,8 +30,8 @@ class Debtdrone < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/endrilickollari/debtdrone-cli/releases/download/v1.0.0/debtdrone_Linux_x86_64.tar.gz"
-        sha256 "0a5bc4a04cc88d398fc0afee37d6fffdaa8102bc101243bd4fd6df23f4eb95ca"
+        url "https://github.com/endrilickollari/debtdrone-cli/releases/download/v2.0.0/debtdrone_linux_amd64.tar.gz"
+        sha256 "199c9b77ec696d3e945ab5ac6805c94a318dade1932fa5628d20b32a25bd2053"
 
         def install
           bin.install "debtdrone"
@@ -40,8 +40,8 @@ class Debtdrone < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/endrilickollari/debtdrone-cli/releases/download/v1.0.0/debtdrone_Linux_arm64.tar.gz"
-        sha256 "a0792f3744311bf4ecc153b6980586792565e83b83c4cf68feeb1055aeb46451"
+        url "https://github.com/endrilickollari/debtdrone-cli/releases/download/v2.0.0/debtdrone_linux_arm64.tar.gz"
+        sha256 "c13fd3bc77d16aa9fece7bbf36aba809d1b413b82764b1971de0ea7c113985ef"
 
         def install
           bin.install "debtdrone"
